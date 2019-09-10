@@ -1,0 +1,17 @@
+.project-panels{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+
+    .panel{
+        background: #f4f4f4;
+        margin: 10px;
+        height: 90%;
+        width: 30%;
+        border-radius: 20px;
+
+        .panel-content{
+            padding: 20px;
+        }
+    }
+}

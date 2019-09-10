@@ -1,0 +1,57 @@
+button {
+  padding: 0;
+  border: 0;
+  outline: none; }
+
+button:hover {
+  cursor: pointer;
+  outline: none;
+  color: green; }
+
+button strong {
+  position: relative;
+  color: black;
+  font-size: 1rem;
+  bottom: 7px;
+  right: 10px; }
+
+#btn-flag {
+  width: 200px;
+  height: 56px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-top: 15px;
+  position: relative;
+  background: yellow;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  border-left: 1px solid red;
+  margin-bottom: 20px; }
+
+#btn-flag::before,
+#btn-flag::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 0;
+  height: 0;
+  left: 87.2%;
+  border-right: 26px solid #fff;
+  border-top: 26px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-left: 25px solid #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#btn-flag::before {
+  border-right: 26px solid red;
+  border-top: 26px solid red;
+  border-bottom: 25px solid red;
+  border-left: 25px solid red;
+  left: 86.6%; }
