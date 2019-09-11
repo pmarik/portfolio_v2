@@ -33,8 +33,7 @@
 		<link rel="prefetch" href="/images/unaffiliatedTemplate.png" as="image">
 		<link rel="prefetch" href="/images/daymakerTemplate.png" as="image"> -->
 	
-		<!-- <link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> -->
+
 		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 	</head>
 
@@ -58,17 +57,20 @@
 		 <!-- About -->
 		 <section id="about" class="inner wrapper style1 fullscreen fade-up">
 			<div class="inner">
-                <div id="model_target" class="loading">
-                    <div class="myimage fade" id="placeholder"></div>
-                </div>
+				<div class="model-wrapper">
+						<div id="model_target" class="loading"> 
+								<div class="myimage fade" id="placeholder"></div>
+							</div>
+				</div>
+               
                
                  
                 <h1>Professional Web Development </h1>
-                <p>I specialize in creating and enhancing websites to grow your business</p>
+                <p style="font-size: 1.1rem;">I specialize in creating and enhancing websites to grow your business</p>
 
 
-				<button id="btn-flag">
-						<strong><a href="#services" class="button scrolly">Learn more</a></strong>
+				<button class="btn-flag">
+						<strong><a href="#services" class="scrolly">Learn More</a></strong>
 				</button>
 
 			</div>
@@ -78,7 +80,7 @@
         <section id="services" class="jumptarget wrapper fullscreen style2 fade-up">
 				<div class="inner">
 					<h2>Services</h2> 
-					
+					 
 	
 					<p>Your site your brand. Experience the difference a personalized online presence can make for your business.  If you want the most impact for your creative dollars, then put it where it's most effective. I consult to improve websites with the following focus:</p>
 					<div class="features">
@@ -103,10 +105,14 @@
 							<p>Improve the accessibility of your site to convert more sales and gain additional exposure. </p>
 						</section>
 					</div>
-					<p>I use the latest technologies to power your site. This includes semantic HTML, CSS, Javascript, PHP, GIT, NPM, NODE, SCSS, WEBPACK, Shopify, and Wordpress.</p>
-					<ul class="actions">
-						<li><a href="#contact" class="button scrolly">Contact Now</a></li>
-					</ul>
+					
+					<div class="btn-wrapper">
+						<button class="btn-flag2 alt-arrow">
+							<strong><a href="#contact" class="scrolly">Contact Now</a></strong>
+						</button>
+					</div>
+					
+
 				</div>
 			</section>
 
@@ -116,6 +122,7 @@
 				<div class="inner">
 
 					<h2>Projects</h2>
+					
 
 					<div class="project-panels">
 						<section class="panel">
@@ -126,9 +133,21 @@
 										<a href="./case_one.html"><img src="images/unaffiliatedHome.jpg" alt="Unaffiliated Productions | Client Case" /></a>	
 								</div> 
 								<p>Live production site built from scratch. Developed with speed, accessibility, and SEO in mind to drive views and establish credibility...</p>
-								<button id="btn-flag">
-										<strong><a href="#services" class="button scrolly">View Full Project</a></strong>
+							</div>
+							<div class="panel-bottom">
+								<div class="tech-logos">
+									<img src="images/htmlLogo.svg" height="100%" alt="HTML5"/>
+									<img src="images/cssLogo.svg" height="100%" alt="CSS3"/>
+									<img src="images/jsLogo.svg" height="100%" alt="Javascript"/>
+									<img src="images/nodejsLogo.svg" height="100%" alt="Node.js"/>
+									<img src="images/webpackLogo.svg" height="100%" alt="Webpack.js"/>
+									<img src="images/gitLogo.svg" height="100%" alt="Git"/>
+								</div>
+
+								<button  class="btn-flag alt-bg">
+									<strong><a href="#services" class="button scrolly">View Full Project</a></strong>
 								</button>
+
 							</div>
 						</section>
 
@@ -141,7 +160,18 @@
 								</div> 
 								<p>Ecommerce consultation to improve the design and functionality of a Shopify store to increase conversions... </p>
 							</div>
+							<div class="panel-bottom">
+								<div class="tech-logos">
+									<img src="images/htmlLogo.svg" height="100%"/>
+									<img src="images/cssLogo.svg" height="100%" />
+									<img src="images/jsLogo.svg" height="100%" />
+									<img src="images/shopifyLogo.svg" height="100%" />
+								</div>
 
+								<button class="btn-flag alt-bg">
+									<strong><a href="#services" class="button scrolly">View Full Project</a></strong>
+								</button>
+							</div>
 						</section>
 
 						<section class="panel">
@@ -149,9 +179,23 @@
 								<h3>Trade Tracker</h3>
 								<div class="sectionimg">
 										<a href="./case_three.html"><div class="centered"> View Project</div></a>
-										<a href="./case_three.html"><img src="images/tradeTracker_login.jpg" alt="Trade Tracker | Client Case" /></a>
+										<a href="./case_three.html"><img src="images/tradeTracker_journal.jpg" alt="Trade Tracker | Client Case" /></a>
 								</div>
 								<p>MERN stack application to assist beginner investors...</p> 
+							</div>
+							<div class="panel-bottom">
+								<div class="tech-logos">
+									<img src="images/ReactLogo.svg" height="100%"/>
+									<img src="images/htmlLogo.svg" height="100%"/>
+									<img src="images/cssLogo.svg" height="100%" />
+									<img src="images/jsLogo.svg" height="100%" />
+									<img src="images/nodejsLogo.svg" height="100%" />
+									<img src="images/gitLogo.svg" height="100%";/>
+								</div>
+	
+								<button class="btn-flag alt-bg">
+									<strong><a href="#services" class="button scrolly">View Full Project</a></strong>
+								</button>
 							</div>
 						</section>
 					</div>
@@ -166,8 +210,6 @@
 				<div class="inner">
 					<h2>Get in touch</h2>
 				
-
-			
 					<p>Start the conversation to help improve your online presence to get real results for your business. Let's work together.</p>
 					<div class="split style1">
 						<section>
@@ -189,9 +231,9 @@
 											<textarea name="message" id="message" rows="5" placeholder="Type your message here"></textarea>
 										</div>
 									</div>
-									<ul class="actions">
-										<li><a href="" class="button submit">Send Message</a></li>
-									</ul>
+									<button class="btn-flag2 alt-arrow">
+										<strong><a href="#contact" class="scrolly submit">Send Message</a></strong>
+									</button>
 								</form>
 							
 							</section>
@@ -222,7 +264,8 @@
 								</ul>
 							</section>
 						</div>
-						<p>&copy; Marik Tech, LLC</p>
+					
+						<p>&copy; Marik Tech, LLC </p>
 					</div>
 				</section>			
 			</div>

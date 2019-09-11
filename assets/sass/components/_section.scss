@@ -43,6 +43,7 @@ header {
     max-width: 100%;
     position: relative;
     display: flex;
+    margin-bottom: 5%;
     &:hover{
         
         img{
@@ -54,7 +55,7 @@ header {
                 //display: block;
                 visibility: visible;
                 opacity: 1;
-            }
+            } 
         
     }
     a:nth-child(2){
@@ -79,14 +80,14 @@ header {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #474b4f;
-        color: white;
+        background-color: _palette(accent2);
+        color: _palette(accent3);
         width: 10em;
         text-align:center;
+        font-size: 1rem;
         padding: 10px 20px 10px 20px;
         border-style: solid;
         border-width: 1px;
-        border-radius: 3em;
         z-index: 10000;
         //display:none;
         visibility: hidden;

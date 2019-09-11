@@ -2,7 +2,7 @@
                     const mouse = new THREE.Vector2();
                     const look = new THREE.Vector2();
                     const windowHalf = new THREE.Vector2( window.innerWidth / 2, window.innerHeight / 2 );
-                    var plane = new THREE.Plane(new THREE.Vector3(0, 0, 0.4), -12);
+                    var plane = new THREE.Plane(new THREE.Vector3(0, 0, 0.4), -11);
                     var raycaster = new THREE.Raycaster();
                     var pointOfIntersection = new THREE.Vector3();
                     let modelLoaded = false;
@@ -21,7 +21,7 @@
                         camera.position.set(0, 5, 35)
                         //camera.position.y = 13;
 
-                        scene.background = new THREE.Color(0xdddddd); //Set background color 
+                        scene.background = new THREE.Color(0xDFD8C8); //Set background color 
 
                         var light = new THREE.DirectionalLight("#c1582d", 1);
                         var ambient = new THREE.AmbientLight("#85b2cd");

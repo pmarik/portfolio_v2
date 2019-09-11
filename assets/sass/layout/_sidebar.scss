@@ -51,7 +51,7 @@
         a {
             @include vendor('transition', 'color #{_duration(transition)} ease');
             border: 0;
-            color:#cabcaa;
+            color: _palette(accent1-alt);
             display: block;
             font-size: 0.6em;
             font-weight: _font(weight-bold);
@@ -84,7 +84,7 @@
                 color:_palette(accent3);
             }
             &.active {
-                color: _palette(fg-bold);
+                color: _palette(hd-color);
                 &:after {
                     max-width: 100%;
                 }

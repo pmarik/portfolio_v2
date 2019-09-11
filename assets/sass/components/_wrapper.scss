@@ -6,10 +6,11 @@
     position: relative;
 
     > .inner {
-        @include padding(5em, 5em);
+        //@include padding(2em, 3em);
         max-width: 100%;
-        
+        padding: 2em 3em;
         width: _size(inner-width);
+        z-index: 1;
 
         @include breakpoint('<=xlarge') {
             @include padding(4em, 4em);
@@ -88,6 +89,7 @@
                 'transform #{_duration(activation)} ease'
             ));
             opacity: 1.0;
+            z-index: 2;
         }
 
         &.inactive,
@@ -133,4 +135,68 @@
             }
         }
     }
+
+    &:first-of-type::after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%; 
+        right: 0;
+        border-top: 20vh solid _palette(accent1);
+        border-right: 85vw solid _palette(accent2);
+        bottom: -10vh;
+        z-index: 1;
+    } 
+
+    &:nth-of-type(2)::after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%; 
+        right: 0;
+        border-top: 10vh solid _palette(accent2);
+        border-left: 85vw solid _palette(accent1);
+        bottom: 0vh;
+        z-index: 0;
+    } 
+
+    &:nth-of-type(4)::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%; 
+        right: 0;
+        border-top: 10vh solid _palette(accent1);
+        border-left: 85vw solid _palette(accent2);
+        top: 0vh;
+        z-index: 1;
+    } 
+
+    &:nth-of-type(4)::after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%; 
+        right: 0;
+        border-top: 10vh solid _palette(accent2);
+        border-right: 85vw solid _palette(accent1);
+        bottom: 0vh;
+        z-index: 1;
+    }
+
+    @include breakpoint('<=large') {
+        &:first-of-type::after{
+            border-right: 100vw solid _palette(accent2);
+        } 
+        &:nth-of-type(2)::after{
+            border-left: 100vw solid _palette(accent1);
+        }
+        &:nth-of-type(4)::before{
+            border-left: 100vw solid _palette(accent2);
+        }
+        &:nth-of-type(4)::after{
+            border-right: 100vw solid _palette(accent1);
+        }
+    }
 }
+
