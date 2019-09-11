@@ -142,9 +142,9 @@
         display: block;
         width: 100%; 
         right: 0;
-        border-top: 20vh solid _palette(accent1);
+        border-top: 15vh solid transparent;
         border-right: 85vw solid _palette(accent2);
-        bottom: -10vh;
+        bottom: 0vh;
         z-index: 1;
     } 
 
@@ -154,10 +154,10 @@
         display: block;
         width: 100%; 
         right: 0;
-        border-top: 10vh solid _palette(accent2);
+        border-top: 20vh solid _palette(accent2);
         border-left: 85vw solid _palette(accent1);
-        bottom: 0vh;
-        z-index: 0;
+        bottom: -10vh;
+        z-index: 1; 
     } 
 
     &:nth-of-type(4)::before{

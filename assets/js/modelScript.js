@@ -21,7 +21,7 @@
                         camera.position.set(0, 5, 35)
                         //camera.position.y = 13;
 
-                        scene.background = new THREE.Color(0xDFD8C8); //Set background color 
+                      // scene.background = new THREE.Color(0xDFD8C8); //Set background color 
 
                         var light = new THREE.DirectionalLight("#c1582d", 1);
                         var ambient = new THREE.AmbientLight("#85b2cd");
@@ -70,12 +70,12 @@
                        
                        
 
-                        renderer = new THREE.WebGLRenderer( { antialias: true } );
+                        renderer = new THREE.WebGLRenderer( { alpha: true, antialias: true  } );
                         renderer.setSize( 600, 300 );
                         
                         placement.appendChild( renderer.domElement );
 
-                        renderer.setClearColor(0x00ffff, 1); 
+                        renderer.setClearColor(0x000000, 0); 
                         renderer.gammaOutput = true;
                         
                         document.addEventListener( 'mousemove', onMouseMove, false );

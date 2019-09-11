@@ -1,6 +1,6 @@
 
 .model-wrapper{
-   background: pink;
+   
    height: 300px;
    width: 600px;
    position: relative;
@@ -11,6 +11,7 @@ canvas {
     width: 100%;
     height: 100%;
     display: block;
+    transition: 1000ms opacity;
     
 }    
 
@@ -29,8 +30,8 @@ canvas {
 .myimage{
    height: 300px;
    width: 600px;
-   
-   background-color: _palette(accent1);
+   background-color: transparent;
+   //background-color: _palette(accent1);
    /* background-image: url('https://placehold.jp/600x300.png'); */
    z-index: 50000;
    transition: 50ms opactiy;
