@@ -451,32 +451,28 @@ canvas {
     .wrapper:nth-of-type(4)::after {
       border-right: 100vw solid #DFD8C8; } }
 
-button {
+/********************************************************/
+a .btn-flag,
+a .btn-flag2 {
   padding: 0;
   border: 0;
   outline: none;
-  z-index: 1; }
+  text-decoration: none; }
 
-button:hover {
-  cursor: pointer;
-  outline: none;
-  color: #AF9D61; }
-
-button strong {
+a.btn-flag strong,
+a.btn-flag2 strong {
   position: relative;
-  color: inherit;
   font-size: 0.7rem;
-  bottom: 7px;
-  right: 10px; }
-  button strong a {
-    border-bottom: none; }
-  button strong a:hover {
-    color: #AF9D61; }
+  bottom: 0px;
+  right: 10px;
+  color: inherit; }
 
-button.alt-arrow strong {
-  left: 10px; }
+a.btn-flag2 strong {
+  right: -8px; }
 
+/************************************************************/
 .btn-flag {
+  display: inline-block;
   width: 200px;
   height: 35px;
   -webkit-box-sizing: content-box;
@@ -492,9 +488,10 @@ button.alt-arrow strong {
   border-top: 1px solid #AF9D61;
   border-bottom: 1px solid #AF9D61;
   border-left: 1px solid #AF9D61;
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
   .btn-flag:hover {
-    background: #615d5c; }
+    background: #615d5c;
+    color: #AF9D61; }
 
 .btn-flag::before,
 .btn-flag::after {
@@ -518,6 +515,7 @@ button.alt-arrow strong {
   left: 86.5%; }
 
 .btn-flag2 {
+  display: inline-block;
   width: 200px;
   height: 35px;
   -webkit-box-sizing: content-box;
@@ -535,7 +533,8 @@ button.alt-arrow strong {
   border-right: 1px solid #AF9D61;
   margin-bottom: 20px; }
   .btn-flag2:hover {
-    background: #615d5c; }
+    background: #615d5c;
+    color: #AF9D61; }
 
 .btn-flag2::before,
 .btn-flag2::after {
@@ -924,7 +923,7 @@ header h6 + p {
     width: 2.5em;
     height: 2.5em;
     display: block;
-    background: #C0B283;
+    background: #AF9D61;
     border-radius: 100%;
     color: #262f31;
     text-align: center;
@@ -1570,3 +1569,13 @@ input[type="radio"] + label:before {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% 100%; }
+
+#contact .inner .svgContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  #contact .inner .svgContact h2 {
+    display: inline-block;
+    padding-right: 10px; }
+  #contact .inner .svgContact img {
+    bottom: 5px; }

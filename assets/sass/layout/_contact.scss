@@ -1,0 +1,19 @@
+
+#contact{
+    .inner{
+        .svgContact{
+            display: flex;
+        
+            h2{
+                display: inline-block;
+                padding-right: 10px
+            }
+        
+            img{
+                bottom: 5px;
+                
+            }
+        }
+    }
+}
+
