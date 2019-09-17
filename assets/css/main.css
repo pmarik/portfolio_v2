@@ -452,6 +452,7 @@ canvas {
       border-right: 100vw solid #DFD8C8; } }
 
 /********************************************************/
+a,
 a .btn-flag,
 a .btn-flag2 {
   padding: 0;
@@ -565,6 +566,43 @@ a.btn-flag2 strong {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+
+span.svg-btn,
+span.svg-btn-alt {
+  background: url(images/flag.svg) no-repeat top left;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 52px;
+  width: 210px;
+  border-top: 20px;
+  padding-top: 1.2rem;
+  padding-right: 1.7rem;
+  color: #f4f4f4;
+  font-weight: bold;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  -webkit-transition: 120ms ease-out;
+  -o-transition: 120ms ease-out;
+  transition: 120ms ease-out; }
+  span.svg-btn:hover,
+  span.svg-btn-alt:hover {
+    color: #AF9D61;
+    -webkit-filter: opacity(90%);
+    filter: opacity(90%);
+    -webkit-transition: 120ms ease-in-out;
+    -o-transition: 120ms ease-in-out;
+    transition: 120ms ease-in-out; }
+
+span.svg-btn-alt {
+  background: url(images/flag-alt.svg) no-repeat top right;
+  padding-left: 2.9rem; }
+
+button {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  outline: none; }
 
 /* Section/Article */
 section.special, article.special {

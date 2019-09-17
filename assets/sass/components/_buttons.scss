@@ -32,7 +32,7 @@
 // }
  
 /********************************************************/
-
+a,
 a .btn-flag,
 a .btn-flag2 {
   padding: 0;
@@ -167,5 +167,48 @@ left: 0.5%;
   display: flex;
   justify-content: flex-end;
 }
+
+
+span.svg-btn,
+span.svg-btn-alt{
+  background: url(images/flag.svg) no-repeat top left;
+  background-size: contain;
+  //filter: drop-shadow( 3px 3px 2px _palette(btn-hover));
+  cursor: pointer;
+  display: inline-block;
+  height: 52px;
+  width: 210px;
+  border-top: 20px;
+  padding-top: 1.2rem;
+  padding-right: 1.7rem;
+  color: _palette(accent2);
+  font-weight: bold;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  transition: 120ms ease-out;
+
+  &:hover{
+    color: _palette(accent3);
+    filter: opacity(90%);
+    transition: 120ms ease-in-out;
+  } 
+}
+
+span.svg-btn-alt{
+  background: url(images/flag-alt.svg) no-repeat top right;
+  padding-left: 2.9rem;
+
+}
+
+
+button {
+  background: transparent;
+  padding: 0; 
+  border: 0;
+  outline: none;
+}
+
+
+ 
 
 
