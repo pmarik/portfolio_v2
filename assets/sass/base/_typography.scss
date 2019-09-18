@@ -37,7 +37,7 @@ a {
 
     &:hover {
         border-bottom-color: transparent;
-        color: _palette(fg-bold);
+        color: _palette(accent3);
     }
 }
 
@@ -78,7 +78,7 @@ h1 {
         padding-bottom: 0.35em;
 
         &:after {
-            @include vendor('background-image', 'linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
+            @include vendor('background-image', 'linear-gradient(to left, #{_palette(accent2)}, #{_palette(accent3)})');
             @include vendor('transition', 'max-width #{_duration(transition)} ease');
             border-radius: 0.2em;
             bottom: 0;

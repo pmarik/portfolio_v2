@@ -25,25 +25,27 @@ canvas {
   
 }
 
-        
+
+.faded{
+   opacity: 0;
+   transition: 50ms linear all;
+}
 
 .myimage{
    height: 300px;
    width: 600px;
-   background-color: transparent;
-   //background-color: _palette(accent1);
-   /* background-image: url('https://placehold.jp/600x300.png'); */
+   // background-color: transparent;
+   background-color: black;
+   //background-image: url(images/flag.svg); 
    z-index: 50000;
-   transition: 50ms opactiy;
+   transition: 100ms opacity;
 }
 
-.fade{
+.fade{ 
    z-index: 50000;
-   transition: 2s linear all;
+   transition: 3s linear all;
    position: absolute;
    background-image: none;
-
-   
    width: 600px;
    height: 300px;
 }

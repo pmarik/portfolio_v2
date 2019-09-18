@@ -48,13 +48,15 @@
                             // called when loading is in progresses
                             function ( xhr ) {
 
-                                    console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+                                    // Loading progress of model
+                                    //console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
                                     if((xhr.loaded / xhr.total * 100) == 100){
                                         modelLoaded = true;
 
 
                                         var placeholder = document.getElementById("placeholder");
-                                        placeholder.classList.remove("myimage")
+                                        //placeholder.classList.remove("myimage")
+                                        placeholder.classList.add("faded");
                                         placement.classList.remove("loading");
                                     }
 

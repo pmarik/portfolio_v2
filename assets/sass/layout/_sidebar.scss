@@ -2,7 +2,7 @@
 /* Sidebar */
 
 #sidebar {
-    @include padding(2.5em, 2.5em);
+    padding: 2.5em;
     background: _palette(bg);
     cursor: default; 
     height: 100vh;
@@ -67,7 +67,7 @@
                 border-radius: 0.2em;
                 bottom: 0;
                 content: '';
-                height: 0.2em;
+                height: 0.1rem;
                 position: absolute;
                 right: 0;
                 width: 100%;
@@ -76,7 +76,7 @@
                 background: lighten(_palette(bg), 5);
             }
             &:after {
-                @include vendor('background-image', 'linear-gradient(to right, #{_palette(accent1)}, #{_palette(accent3)})');
+                @include vendor('background-image', 'linear-gradient(to right, #{_palette(bg)}, #{_palette(border)}, #{_palette(accent3)})');
                 @include vendor('transition', 'max-width #{_duration(transition)} ease');
                 max-width: 0;
             }
@@ -84,7 +84,7 @@
                 color:_palette(accent3);
             }
             &.active {
-                color: _palette(hd-color);
+                color: _palette(accent3);
                 &:after {
                     max-width: 100%;
                 }

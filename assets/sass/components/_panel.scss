@@ -30,7 +30,7 @@
         @include breakpoint('<=medium'){
             min-width: 40%;
         }
-
+ 
         @include breakpoint('<=small'){
             min-width: 90%;
         }

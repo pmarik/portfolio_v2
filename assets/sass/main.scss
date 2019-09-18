@@ -35,11 +35,18 @@
 @import 'components/icons';
 @import 'components/split';
 @import 'components/form';
+@import 'components/animations';
+@import 'components/image';
+@import 'components/case';
+@import 'components/loader';
+@import 'components/card';
 
 
 
 // Layout
 @import 'layout/wrapper';
 @import 'layout/sidebar';  
-@import 'layout/about';
+@import 'layout/about'; 
 @import 'layout/contact';
+@import 'layout/header';
+@import 'layout/footer';

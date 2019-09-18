@@ -1,0 +1,21 @@
+.case:first-of-type::after{
+    z-index: -1;
+}
+
+#header > nav > ul > li a.nxt {
+    color: _palette(accent3);
+        &:hover{
+        &::before{
+            content: "►  ";
+            color: _palette(accent3);
+        }
+    }
+}
+
+#wrapper.case .inner a {
+    color: _palette(accent3)
+}
+
+.case h3 {
+    margin: 0 0 2rem 0;
+}

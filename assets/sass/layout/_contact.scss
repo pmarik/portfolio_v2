@@ -17,3 +17,21 @@
     }
 }
 
+ul.contact {
+    list-style: none;
+    padding: 0;
+
+    > li {
+        padding: 0;
+        margin: 1.5em 0 0 0;
+
+        h3{
+            color: _palette(accent3);
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
