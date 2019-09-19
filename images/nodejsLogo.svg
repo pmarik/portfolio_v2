@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="207.31061mm"
+   height="233.59906mm"
+   viewBox="0 0 207.31061 233.59906"
    version="1.1"
    id="svg8"
    sodipodi:docname="nodejsLogo.svg"
@@ -23,7 +23,7 @@
        y2="105.42219"
        x2="32.862076"
        y1="21.346527"
-       x1="79.822203"
+       x1="79.822205"
        gradientTransform="scale(0.93682488,1.0674354)"
        gradientUnits="userSpaceOnUse">
       <stop
@@ -48,13 +48,14 @@
          stop-color="#3FAE2A" />
     </linearGradient>
     <path
-       d="M57.903 1.85a5.957 5.957 0 0 0-5.894 0L3.352 29.933c-1.85 1.04-2.89 3.005-2.89 5.085v56.286c0 2.08 1.156 4.045 2.89 5.085l48.657 28.085a5.957 5.957 0 0 0 5.894 0l48.658-28.085c1.849-1.04 2.89-3.005 2.89-5.085V35.019c0-2.08-1.157-4.045-2.89-5.085L57.903 1.85z"
-       id="a" />
+       d="m 57.903,1.85 a 5.957,5.957 0 0 0 -5.894,0 L 3.352,29.933 c -1.85,1.04 -2.89,3.005 -2.89,5.085 v 56.286 c 0,2.08 1.156,4.045 2.89,5.085 l 48.657,28.085 a 5.957,5.957 0 0 0 5.894,0 l 48.658,-28.085 c 1.849,-1.04 2.89,-3.005 2.89,-5.085 V 35.019 c 0,-2.08 -1.157,-4.045 -2.89,-5.085 z"
+       id="a"
+       inkscape:connector-curvature="0" />
     <linearGradient
        id="d"
        y2="-19.864828"
        x2="184.67395"
-       y1="64.594605"
+       y1="64.594604"
        x1="51.368862"
        gradientTransform="scale(0.92602084,1.0798893)"
        gradientUnits="userSpaceOnUse">
@@ -80,7 +81,7 @@
        y2="1.3961854"
        x2="60.624519"
        y1="1.3961854"
-       x1="5.4630943"
+       x1="5.4630942"
        gradientTransform="scale(1.6318162,0.6128141)"
        gradientUnits="userSpaceOnUse">
       <stop
@@ -102,9 +103,9 @@
     </linearGradient>
     <linearGradient
        id="f"
-       y2="66.989659"
+       y2="66.989662"
        x2="120.27905"
-       y1="66.989659"
+       y1="66.989662"
        x1="-1.4223322"
        gradientTransform="scale(0.92514783,1.0809083)"
        gradientUnits="userSpaceOnUse">
@@ -127,9 +128,9 @@
     </linearGradient>
     <linearGradient
        id="g"
-       y2="68.391641"
-       x2="169.5617"
-       y1="68.391641"
+       y2="68.39164"
+       x2="169.56171"
+       y1="68.39164"
        x1="117.94696"
        gradientTransform="scale(0.65492335,1.5268962)"
        gradientUnits="userSpaceOnUse">
@@ -153,7 +154,7 @@
     <linearGradient
        id="h"
        y2="150.7515"
-       x2="87.897068"
+       x2="87.897064"
        y1="150.7515"
        x1="-1.0387961"
        gradientTransform="scale(1.2659747,0.78990523)"
@@ -177,7 +178,7 @@
     </linearGradient>
     <linearGradient
        id="i"
-       y2="216.51322"
+       y2="216.51321"
        x2="46.003895"
        y1="37.182247"
        x1="100.85387"
@@ -213,8 +214,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35355339"
-     inkscape:cx="-132.85713"
-     inkscape:cy="655.61145"
+     inkscape:cx="-263.97235"
+     inkscape:cy="534.60277"
      inkscape:document-units="mm"
      inkscape:current-layer="g4573"
      showgrid="false"
@@ -222,7 +223,11 @@
      inkscape:window-height="1001"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -238,11 +243,13 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1" />
+     id="layer1"
+     transform="translate(-1.3891187,-31.384054)" />
   <g
      id="g4573"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1 copy">
+     inkscape:label="Layer 1 copy"
+     transform="translate(-1.3891187,-31.384054)">
     <path
        style="fill:#539e43;stroke-width:1.29173958"
        inkscape:connector-curvature="0"

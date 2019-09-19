@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="205.16672mm"
+   height="227.09732mm"
+   viewBox="0 0 205.16672 227.09732"
    version="1.1"
    id="svg8"
    sodipodi:docname="webpackLogo.svg"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35355339"
-     inkscape:cx="101.0014"
-     inkscape:cy="655.61145"
+     inkscape:cx="-374.32114"
+     inkscape:cy="521.16215"
      inkscape:document-units="mm"
      inkscape:current-layer="g4573"
      showgrid="false"
@@ -35,7 +35,11 @@
      inkscape:window-height="1001"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -51,11 +55,13 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1" />
+     id="layer1"
+     transform="translate(-2.6580776,-34.329639)" />
   <g
      id="g4573"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1 copy">
+     inkscape:label="Layer 1 copy"
+     transform="translate(-2.6580776,-34.329639)">
     <g
        id="g4697"
        transform="matrix(1.0270762,0,0,1.0270762,-4.0898735,-0.16089985)"
