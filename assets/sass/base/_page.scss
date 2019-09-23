@@ -25,6 +25,7 @@
     html {
         box-sizing: border-box;
         scroll-behavior: smooth;
+
     }
 
     *, *:before, *:after {
@@ -33,7 +34,7 @@
 
 body {
     background: _palette(accent2);
-
+    overflow-x: hidden;
     // Stops initial animations until page loads.
         &.is-preload {
             *, *:before, *:after {

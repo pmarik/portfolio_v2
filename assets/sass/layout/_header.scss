@@ -6,6 +6,12 @@
     background-color: _palette(bg);
     cursor: default;
     padding: 1em 2em;
+
+    img{
+     &:hover{
+         filter: opacity(80%);
+     }
+    }
   
 
     > .title {

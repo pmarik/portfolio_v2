@@ -4,6 +4,12 @@
    height: 300px;
    width: 600px;
    position: relative;
+   margin-bottom: 100px;
+   right: 100px;
+
+   @include breakpoint('<medium'){
+      margin-bottom: 0;
+     }
 }
 
 canvas {
@@ -11,8 +17,11 @@ canvas {
     width: 100%;
     height: 100%;
     display: block;
-    transition: 1000ms opacity;
-    
+    transition: 1000ms opacity; 
+
+    @include breakpoint('<medium'){
+     display: none;
+    }
 }    
 
 .loading canvas{ 
@@ -22,6 +31,15 @@ canvas {
 
 #model_target{
    position: relative;
+
+   .myimage{
+      img {
+         @include breakpoint('<medium'){
+            width: 80vw !important;
+            height: auto;
+           }
+      }
+   }
   
 }
 
@@ -29,21 +47,27 @@ canvas {
 .faded{
    opacity: 0;
    transition: 50ms linear all;
+
+   @include breakpoint('<medium'){
+      opacity: 1;
+  }
+
 }
 
 .myimage{
-   height: 300px;
-   width: 600px;
+   position: relative;
    // background-color: transparent;
-   background-color: black;
+   background-color: transparent;
    //background-image: url(images/flag.svg); 
    z-index: 50000;
    transition: 100ms opacity;
+   top: 75px;
+   left: 83px;
 }
 
 .fade{ 
    z-index: 50000;
-   transition: 3s linear all;
+   transition: 100ms linear all;
    position: absolute;
    background-image: none;
    width: 600px;

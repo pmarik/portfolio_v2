@@ -70,8 +70,11 @@ function init(){
 
         entries.forEach(entry => {
            
+         
+
             if(entry.intersectionRatio > 0){
                 entry.target.style.animation = `anim1 1s forwards ease-out`;
+                
             }
             else{
                 entry.target.style.animation = `none`;

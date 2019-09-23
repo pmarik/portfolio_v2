@@ -13,6 +13,7 @@
 
     > .inner {
         text-align: right;
+        margin: 0 auto;
         a {
             border-bottom-color: _palette(border);
 
@@ -47,8 +48,4 @@
         }
     }
     
-}
-
-.case-footer{
-
 }

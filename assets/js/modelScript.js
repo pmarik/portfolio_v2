@@ -2,7 +2,7 @@
                     const mouse = new THREE.Vector2();
                     const look = new THREE.Vector2();
                     const windowHalf = new THREE.Vector2( window.innerWidth / 2, window.innerHeight / 2 );
-                    var plane = new THREE.Plane(new THREE.Vector3(0, 0, 0.4), -11);
+                    var plane = new THREE.Plane(new THREE.Vector3(0, 0, 0.4), -9);
                     var raycaster = new THREE.Raycaster();
                     var pointOfIntersection = new THREE.Vector3();
                     let modelLoaded = false;
@@ -18,25 +18,25 @@
                         scene = new THREE.Scene();
 
                         camera = new THREE.PerspectiveCamera( 60, 1, 1, 1000);
-                        camera.position.set(0, 5, 35)
+                        camera.position.set(5, 3, 28)
                         //camera.position.y = 13;
 
-                      // scene.background = new THREE.Color(0xDFD8C8); //Set background color 
 
-                        var light = new THREE.DirectionalLight("#c1582d", 1);
-                        var ambient = new THREE.AmbientLight("#85b2cd");
+                        var light = new THREE.DirectionalLight("#fff", 1.5); 
+                        var ambient = new THREE.AmbientLight("#FFF");
                         light.position.set( 0, -70, 100 ).normalize();
                         scene.add(light);
-                        scene.add(ambient);
+                       // scene.add(ambient);
 
                         var texture = new THREE.Texture();
 
                         var loader = new THREE.GLTFLoader();
 
+                      
                         // Load a glTF resource
                         loader.load(
                             // 3d model resource 
-                            './assets/models/4test.glb',
+                            './assets/models/mrktechy3.glb',
                             // called when the resource is loaded
                             function ( gltf ) {
 
@@ -70,10 +70,11 @@
                         );
 
                        
-                       
+                        //scene.background = new THREE.Color(0xfff); //Set background color 
+
 
                         renderer = new THREE.WebGLRenderer( { alpha: true, antialias: true  } );
-                        renderer.setSize( 600, 300 );
+                        renderer.setSize( 800, 500 );
                         
                         placement.appendChild( renderer.domElement );
 
@@ -105,8 +106,8 @@
 
                     function onResize( event ) {
 
-                        const width = 600 ;
-                        const height = 300;
+                        const width = 800 ;
+                        const height = 500;
                     
                         windowHalf.set( width / 2, height / 2 );
                         
@@ -137,7 +138,23 @@
                         if (modelLoaded){
                             update();
                         }
+                        if (resize(renderer)) {
+                            camera.aspect = canvas.clientWidth / canvas.clientHeight;
+                            camera.updateProjectionMatrix();
+                          }
                         renderer.render( scene, camera );
 
                     }                 
-		
+        
+                    
+                    function resize(renderer) {
+                        const canvas = renderer.domElement;
+                        const width = canvas.clientWidth;
+                        const height = canvas.clientHeight;
+                        const needResize = canvas.width !== width || canvas.height !== height;
+                        if (needResize) {
+                          renderer.setSize(width, height, false);
+                        }
+                        return needResize;
+                      }
+                      
