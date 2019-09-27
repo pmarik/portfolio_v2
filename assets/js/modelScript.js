@@ -1,4 +1,5 @@
                     let camera, scene, renderer;
+                    
                     const mouse = new THREE.Vector2();
                     const look = new THREE.Vector2();
                     const windowHalf = new THREE.Vector2( window.innerWidth / 2, window.innerHeight / 2 );
@@ -10,14 +11,17 @@
                     let placement = document.getElementById("model_target")
 
 
+             
                     window.addEventListener('DOMContentLoaded', init);
 
 
                     function init() {
-
+                        
                         scene = new THREE.Scene();
 
                         camera = new THREE.PerspectiveCamera( 60, 1, 1, 1000);
+                        //camera = new THREE.OrthographicCamera( window.innerWidth / - 50, window.innerWidth / 50, window.innerHeight / 50, window.innerHeight / -50, - 500, 1000);
+
                         camera.position.set(5, 3, 28)
                         //camera.position.y = 13;
 
@@ -32,11 +36,12 @@
 
                         var loader = new THREE.GLTFLoader();
 
-                      
+                        THREE.Cache.enabled = true;
+
                         // Load a glTF resource
                         loader.load(
                             // 3d model resource 
-                            './assets/models/mrktechy3.glb',
+                            './assets/models/mrktechy4.glb',
                             // called when the resource is loaded
                             function ( gltf ) {
 
@@ -45,17 +50,17 @@
                                     scene.add( mesh );
 
                             },
-                            // called when loading is in progresses
+                            // called when loading is in progress
                             function ( xhr ) {
 
                                     // Loading progress of model
-                                    //console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+                                    console.log(xhr);
+                                    console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
                                     if((xhr.loaded / xhr.total * 100) == 100){
                                         modelLoaded = true;
 
-
+                                        //Loading overlay
                                         var placeholder = document.getElementById("placeholder");
-                                        //placeholder.classList.remove("myimage")
                                         placeholder.classList.add("faded");
                                         placement.classList.remove("loading");
                                     }
@@ -64,13 +69,13 @@
                             // called when loading has errors
                             function ( error ) {
 
-                                    console.log( 'An error happened' );
+                                    console.log( error );
 
                             }
                         );
 
                        
-                        //scene.background = new THREE.Color(0xfff); //Set background color 
+                        //scene.background = new THREE.Color(0xfffffff); //Set background color 
 
 
                         renderer = new THREE.WebGLRenderer( { alpha: true, antialias: true  } );
@@ -78,6 +83,7 @@
                         
                         placement.appendChild( renderer.domElement );
 
+                        //make background transparent
                         renderer.setClearColor(0x000000, 0); 
                         renderer.gammaOutput = true;
                         
@@ -138,10 +144,10 @@
                         if (modelLoaded){
                             update();
                         }
-                        if (resize(renderer)) {
-                            camera.aspect = canvas.clientWidth / canvas.clientHeight;
-                            camera.updateProjectionMatrix();
-                          }
+                        // if (resize(renderer)) {
+                        //     camera.aspect = canvas.clientWidth / canvas.clientHeight;
+                        //     camera.updateProjectionMatrix();
+                        //   }
                         renderer.render( scene, camera );
 
                     }                 

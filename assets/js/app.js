@@ -1,4 +1,6 @@
 function init(){
+
+
     
     //Sidebar 
     let sidebar = document.getElementById('sidebar');

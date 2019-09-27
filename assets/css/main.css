@@ -282,9 +282,9 @@ canvas {
 
 .faded {
   opacity: 0;
-  -webkit-transition: 50ms linear all;
-  -o-transition: 50ms linear all;
-  transition: 50ms linear all; }
+  -webkit-transition: 500ms linear all;
+  -o-transition: 500ms linear all;
+  transition: 500ms linear all; }
   @media screen and (max-width: 746px) {
     .faded {
       opacity: 1; } }
@@ -293,17 +293,17 @@ canvas {
   position: relative;
   background-color: transparent;
   z-index: 50000;
-  -webkit-transition: 100ms opacity;
-  -o-transition: 100ms opacity;
-  transition: 100ms opacity;
+  -webkit-transition: 500ms opacity;
+  -o-transition: 500ms opacity;
+  transition: 500ms opacity;
   top: 75px;
   left: 83px; }
 
 .fade {
   z-index: 50000;
-  -webkit-transition: 100ms linear all;
-  -o-transition: 100ms linear all;
-  transition: 100ms linear all;
+  -webkit-transition: 500ms linear all;
+  -o-transition: 500ms linear all;
+  transition: 500ms linear all;
   position: absolute;
   background-image: none;
   width: 600px;
@@ -2038,3 +2038,29 @@ ul.contact {
     top: 0;
     border-top: 5vh solid #f4f4f4;
     border-right: 100vw solid #DFD8C8; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto; }
+
+#footer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+
+.four {
+  text-align: center; }
+  .four .wrapper:first-of-type::after {
+    bottom: -10vh; }

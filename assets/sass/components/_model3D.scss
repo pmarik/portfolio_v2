@@ -46,7 +46,7 @@ canvas {
 
 .faded{
    opacity: 0;
-   transition: 50ms linear all;
+   transition: 500ms linear all;
 
    @include breakpoint('<medium'){
       opacity: 1;
@@ -59,17 +59,20 @@ canvas {
    // background-color: transparent;
    background-color: transparent;
    //background-image: url(images/flag.svg); 
-   z-index: 50000;
-   transition: 100ms opacity;
+   z-index: 50000; 
+   transition: 500ms opacity;
    top: 75px;
    left: 83px;
 }
 
 .fade{ 
    z-index: 50000;
-   transition: 100ms linear all;
+   transition: 500ms linear all;
    position: absolute;
    background-image: none;
    width: 600px;
    height: 300px;
 }
+ 
+
+
