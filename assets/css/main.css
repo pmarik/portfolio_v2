@@ -309,6 +309,65 @@ canvas {
   width: 600px;
   height: 300px; }
 
+.marikTech-logo {
+  margin-bottom: 2%;
+  margin-top: 10vh; }
+  .marikTech-logo img {
+    width: 550px;
+    height: auto; }
+    @media screen and (max-width: 746px) {
+      .marikTech-logo img {
+        width: 70vw;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom: 2.5vh; } }
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px); }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px); }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px); }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px); }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px); }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px); }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+.swing:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+
 /* Wrapper */
 .wrapper {
   position: relative; }
@@ -1393,6 +1452,12 @@ input[type="radio"] + label:before {
     content: "►  ";
     color: #AF9D61; }
 
+#header > nav > ul > li a.bfr {
+  color: #AF9D61; }
+  #header > nav > ul > li a.bfr:hover::after {
+    content: "   ◄";
+    color: #AF9D61; }
+
 #wrapper.case .inner a {
   color: #AF9D61; }
 
@@ -1915,7 +1980,8 @@ img#loader {
   background-image: url(images/intro.svg);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 100vh; }
 
 #wrapper #about .inner {
   position: relative;
@@ -1971,7 +2037,13 @@ ul.contact {
     text-align: right; }
     #header > nav > ul {
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
       #header > nav > ul > li {
         display: inline-block;
         margin-left: 1.75em;

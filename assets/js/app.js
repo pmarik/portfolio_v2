@@ -101,8 +101,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Load screen transition
     window.setTimeout(() => {
-                document.getElementById('loaddiv').classList.add('loaddiv-fade')
-               document.getElementById('loader').classList.add('load-fade')
+                let check = document.getElementById('loaddiv')
+                if(check){
+                    check.classList.add('loaddiv-fade')
+                    document.getElementById('loader').classList.add('load-fade')
+                }
+                
     }, 800)
     
     init();
@@ -110,14 +114,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
  
   // Return page to top when using back button
-  window.addEventListener( "pageshow", function ( event ) {
-    var historyTraversal = event.persisted || 
-                           ( typeof window.performance != "undefined" && 
-                                window.performance.navigation.type === 2 );
-    if ( historyTraversal ) {
-      // Handle page restore.
-      window.location.reload();
-    }
-  });
+//   window.addEventListener( "pageshow", function ( event ) {
+//     var historyTraversal = event.persisted || 
+//                            ( typeof window.performance != "undefined" && 
+//                                 window.performance.navigation.type === 2 );
+//     if ( historyTraversal ) {
+//       // Handle page restore.
+//       window.location.reload();
+//     }
+//   });
 
 

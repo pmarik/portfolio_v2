@@ -12,6 +12,16 @@
     }
 }
 
+#header > nav > ul > li a.bfr {
+    color: _palette(accent3);
+        &:hover{
+        &::after{
+            content: "   ◄";
+            color: _palette(accent3);
+        }
+    }
+}
+
 #wrapper.case .inner a {
     color: _palette(accent3)
 }

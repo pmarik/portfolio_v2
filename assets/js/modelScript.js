@@ -1,5 +1,5 @@
                     let camera, scene, renderer;
-                    
+                    let mesh;
                     const mouse = new THREE.Vector2();
                     const look = new THREE.Vector2();
                     const windowHalf = new THREE.Vector2( window.innerWidth / 2, window.innerHeight / 2 );
