@@ -1,3 +1,6 @@
+require('intersection-observer');
+
+
 function init(){
 
     
@@ -24,11 +27,6 @@ function init(){
  
 
 
-// Safari 3.0+ "[object HTMLElementConstructor]" 
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-
-
-
     /***************************************************
      * Home page animations when scrolling into section
      * *************************************************/
@@ -38,32 +36,35 @@ var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return
 
         entries.forEach(entry => {
            
-         
+            let panelCheck = entry.target.classList.contains('panel');
 
             if(entry.intersectionRatio > 0){
-                if(isSafari){
-                    // entry.target.style.webkitAnimation = 'anim1 1.5s forwards 0.01s ease-out';
-                    entry.target.style.webkitAnimationNation = 'anim1';
-                    entry.target.style.webkitAnimationDuration = '1.5s';
-                    entry.target.style.webkitAnimationIterationCount = '1';
-                    entry.target.style.webkitAnimationTimingFunction = 'ease-out';
-                    entry.target.style.webkitAnimationFillMode = 'forwards';
-                    console.log("safari browser");
+
+                if (panelCheck){
+                    document.getElementById('anim-slow').classList.add('animActive');
+                    document.getElementById('anim-med').classList.add('animMed');
+                    document.getElementById('anim-fast').classList.add('animFast');
                 }
                 else{
-                    entry.target.style.animation = `anim1 1.5s forwards ease-out`;
-                    console.log('not safari');
+                    entry.target.classList.add('animActive');
+                    
                 }
-            
+
             }
-            else{
-                if(isSafari){
-                    entry.target.style.webkitAnimation = 'none'
-                }
-                else{
-                    entry.target.style.animation = `none`;
-                }
-            }
+
+            //remove animations when scrolling out of view...
+
+            // else{
+            //     if(panelCheck){
+            //         document.getElementById('anim-slow').classList.remove('animActive');
+            //         document.getElementById('anim-med').classList.remove('animMed');
+            //         document.getElementById('anim-fast').classList.remove('animFast');
+            //     }
+            //     else{
+            //         entry.target.classList.remove('animActive');
+            //     }
+
+            // }
         })
 
     })

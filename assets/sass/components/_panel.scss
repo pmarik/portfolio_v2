@@ -12,6 +12,8 @@
         min-width: 30%;
         border-radius: 20px;
         flex: 0 1 280px;
+        flex-direction: column;
+        // justify-content: space-around;
         .panel-content{
             
             height: 70%;
@@ -32,6 +34,7 @@
                 display: flex;
                 justify-content: space-around;
                 margin-top: 10px;
+                margin-bottom: 20px;
                 width: 100%;
                 height: 30px;
                 img{
@@ -39,6 +42,10 @@
                 }
                 
                }
+
+            a {
+                margin-bottom: 20px;
+            }
                
         }
 

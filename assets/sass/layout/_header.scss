@@ -6,6 +6,9 @@
     background-color: _palette(bg);
     cursor: default;
     padding: 1em 2em;
+    min-height: 70px;
+
+
 
     img{
      &:hover{
@@ -69,6 +72,7 @@
 
     @include breakpoint('<=small') {
         padding: 1em 2em;
+        min-height: 55px;
     }
 
     @include breakpoint('<=xsmall') {
