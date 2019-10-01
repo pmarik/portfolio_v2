@@ -169,6 +169,9 @@ left: 0.5%;
 }
 
 
+/****************************************************************
+// flag btn as background svg...
+/****************************************************************/
 span.svg-btn,
 span.svg-btn-alt{
   background: url(images/flag.svg) no-repeat top left;
@@ -210,5 +213,50 @@ button {
 
 
  
+/****************************************************************
+// flag btn inline svg...
+/****************************************************************/
+.flag-btn-container{
+  width: 210px; 
+  height: 52px; 
+  position: relative; 
+  transition: 120ms ease-out;
+
+
+  &:hover{
+    filter: opacity(90%);
+    transition: 120ms ease-in-out;
+    cursor: pointer;
+
+    .flag-btn{
+      color: _palette(accent3);
+      transition: 100ms ease-in;
+    }
+
+  }
+}
+
+svg,
+.flag-btn{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.flag-btn{
+  top: 40%;
+  left: -10px;
+  vertical-align: middle;
+  z-index: 1;
+  color: _palette(accent2);
+  font-weight: bold;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  transition: 120ms ease-out;
+}
+
 
 

@@ -13,3 +13,15 @@
     }
 }
 
+@-webkit-keyframes anim1{
+    0% {
+        -webkit-transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+

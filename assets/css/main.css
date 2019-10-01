@@ -369,6 +369,17 @@ canvas {
   animation-iteration-count: 1; }
 
 /* Wrapper */
+@media screen and (max-width: 746px) {
+  .jumptarget::before {
+    content: "";
+    opacity: 0;
+    display: block;
+    height: 25px;
+    /* fixed header height*/
+    margin: -25px 0 0;
+    /* negative fixed header height */
+    visibility: hidden; } }
+
 .wrapper {
   position: relative; }
   .wrapper > .inner {
@@ -649,6 +660,9 @@ a.btn-flag2 strong {
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
+/****************************************************************
+// flag btn as background svg...
+/****************************************************************/
 span.svg-btn,
 span.svg-btn-alt {
   background: url(images/flag.svg) no-repeat top left;
@@ -685,6 +699,50 @@ button {
   padding: 0;
   border: 0;
   outline: none; }
+
+/****************************************************************
+// flag btn inline svg...
+/****************************************************************/
+.flag-btn-container {
+  width: 210px;
+  height: 52px;
+  position: relative;
+  -webkit-transition: 120ms ease-out;
+  -o-transition: 120ms ease-out;
+  transition: 120ms ease-out; }
+  .flag-btn-container:hover {
+    -webkit-filter: opacity(90%);
+    filter: opacity(90%);
+    -webkit-transition: 120ms ease-in-out;
+    -o-transition: 120ms ease-in-out;
+    transition: 120ms ease-in-out;
+    cursor: pointer; }
+    .flag-btn-container:hover .flag-btn {
+      color: #AF9D61;
+      -webkit-transition: 100ms ease-in;
+      -o-transition: 100ms ease-in;
+      transition: 100ms ease-in; }
+
+svg,
+.flag-btn {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.flag-btn {
+  top: 40%;
+  left: -10px;
+  vertical-align: middle;
+  z-index: 1;
+  color: #f4f4f4;
+  font-weight: bold;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  -webkit-transition: 120ms ease-out;
+  -o-transition: 120ms ease-out;
+  transition: 120ms ease-out; }
 
 /* Section/Article */
 section.special, article.special {
@@ -1364,7 +1422,7 @@ input[type="radio"] + label:before {
 .hidden {
   display: none; }
 
-@-webkit-keyframes anim1 {
+@keyframes anim1 {
   from {
     -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
@@ -1374,14 +1432,12 @@ input[type="radio"] + label:before {
     transform: translateX(0);
     opacity: 1; } }
 
-@keyframes anim1 {
-  from {
+@-webkit-keyframes anim1 {
+  0% {
     -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
     opacity: 0; }
-  to {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+  100% {
+    -webkit-transform: translateX(0px);
     opacity: 1; } }
 
 /* Image */

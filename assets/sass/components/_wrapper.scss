@@ -2,6 +2,19 @@
 
 /* Wrapper */
 
+
+@include breakpoint('<=small') {
+    .jumptarget::before {
+        content:"";
+        opacity: 0;
+        display:block;
+        height:25px; /* fixed header height*/
+        margin:-25px 0 0; /* negative fixed header height */
+        visibility: hidden;
+      }
+}
+
+
 .wrapper {
     position: relative;
 
