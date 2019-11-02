@@ -3,6 +3,11 @@
 /* Footer */
 
 #footer {
+
+    .inner.case-footer{
+        padding: 1.2em 1em;
+    }
+
     #sidebar + #wrapper + & {
         margin-left: _size(sidebar-width);
 
@@ -41,10 +46,14 @@
 
     &::after {
         display: inline-block;
-        height: 30%;
+        height: 10%;
         top: 0;
         border-top: 5vh solid _palette(accent2);
         border-right: 100vw solid _palette(accent1);
+
+        @include breakpoint('<=medium'){
+                height: 40%;
+            }
         }
     }
     

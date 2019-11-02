@@ -2,32 +2,38 @@
     z-index: -1;
 }
 
+
 #header > nav > ul > li a.nxt {
     color: _palette(accent3);
-        &:hover{
-        &::before{
-            content: "►  ";
-            color: _palette(accent3);
-        }
+    &:hover{
+        color: #f4f4f4;
     }
+      
 }
 
 #header > nav > ul > li a.bfr {
     color: _palette(accent3);
-        &:hover{
-        &::after{
-            content: "   ◄";
-            color: _palette(accent3);
-        }
-    }
+      &:hover{
+          color: #f4f4f4;
+      }
 }
 
 #wrapper.case .inner a {
     color: _palette(accent3)
 }
 
-.case h3 {
-    margin: 0 0 2rem 0;
+.case{
+  
+    h3{
+        margin: 0 0 2rem 0;
+    }
+    h1{
+        font-size: 1.75rem;
+    }
+}
+
+#wrapper .case {
+    background: _palette(accent2);
 }
 
 .tradeImgs{

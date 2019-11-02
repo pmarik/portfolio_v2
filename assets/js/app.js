@@ -52,19 +52,7 @@ function init(){
 
             }
 
-            //remove animations when scrolling out of view...
-
-            // else{
-            //     if(panelCheck){
-            //         document.getElementById('anim-slow').classList.remove('animActive');
-            //         document.getElementById('anim-med').classList.remove('animMed');
-            //         document.getElementById('anim-fast').classList.remove('animFast');
-            //     }
-            //     else{
-            //         entry.target.classList.remove('animActive');
-            //     }
-
-            // }
+           
         })
 
     })
@@ -156,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 let check = document.getElementById('loaddiv')
                 if(check){
                     check.classList.add('loaddiv-fade')
-                    document.getElementById('loader').classList.add('load-fade')
+                    // document.getElementById('loader').classList.add('load-fade')
                 }
                 
     }, 800)
@@ -165,15 +153,5 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
  
-  // Return page to top when using back button
-//   window.addEventListener( "pageshow", function ( event ) {
-//     var historyTraversal = event.persisted || 
-//                            ( typeof window.performance != "undefined" && 
-//                                 window.performance.navigation.type === 2 );
-//     if ( historyTraversal ) {
-//       // Handle page restore.
-//       window.location.reload();
-//     }
-//   });
-
+ 
 

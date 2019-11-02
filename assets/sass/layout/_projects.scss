@@ -1,0 +1,31 @@
+#projects {
+    background-attachment: fixed;
+    background-image: url(images/intro.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    min-height: 100vh;
+}
+
+#projects.wrapper > .inner {
+    
+}
+
+
+.tech-logos{ 
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 30px;
+
+    @include breakpoint('<=medium'){
+        width: 100%;
+    }
+    img{
+        padding-left: 5%;
+    }
+    
+   }

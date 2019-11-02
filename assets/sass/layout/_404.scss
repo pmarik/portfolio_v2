@@ -4,17 +4,33 @@ html, body {
   body {
     display: flex;
     flex-direction: column;
+
+    header{
+      max-height: 70px;
+    }
   }
   .content {
     flex: 1 0 auto;
   }
   #footer { 
     flex-shrink: 0;
-  } 
-
+  }  
+ 
   .four {
+    background: _palette(accent2);
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .wrapper:first-of-type::after{
-         bottom: -10vh;
+        bottom: -6.5vh;
+        
+          @include breakpoint('<=small'){ 
+          
+          }
         } 
+
+        
+   
   }

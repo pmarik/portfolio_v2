@@ -6,11 +6,11 @@
 .animMed,
 .animFast {
     animation-name: anim1;
-    animation-duration: 2.8s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
-
+ 
     -webkit-animation-name: anim1;
-    -webkit-animation-duration: 2.8s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
 }
 
@@ -50,3 +50,7 @@
 
 
  } 
+
+
+
+ 

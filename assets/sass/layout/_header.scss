@@ -7,9 +7,8 @@
     cursor: default;
     padding: 1em 2em;
     min-height: 70px;
-
-
-
+    overflow-x: hidden;
+    overflow-y: auto;
     img{
      &:hover{
          filter: opacity(80%);
@@ -26,16 +25,40 @@
     }
 
     > nav {
-        @include vendor('flex', '1');
-        text-align: right;
-        
+     
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        width: 90%;
+        max-height: 100%;
+        justify-content: space-between;
+ 
+        #logo-mobile{
+            display: none;
+            img{
+                height: 80%;
+            }
+        }
+ 
+        @include breakpoint('<=small'){
+            #logo-big{ 
+                display: none;
+            }
+            #logo-mobile{
+                display: inline;
+            }
+        }
 
+        a{
+            transform: translate(0, 10%);
+        }
+      
         > ul {
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: space-between;
-
+            justify-content: flex-end;
+ 
             > li {
                 display: inline-block;
                 margin-left: 1.75em;
@@ -43,7 +66,7 @@
                 vertical-align: middle;
 
                 &:first-child {
-                    margin-left: 0;
+                    margin-left: 0; 
                 }
             
 
@@ -72,7 +95,7 @@
 
     @include breakpoint('<=small') {
         padding: 1em 2em;
-        min-height: 55px;
+        min-height: 70px;
     }
 
     @include breakpoint('<=xsmall') {
@@ -86,8 +109,8 @@
         }
 
         > nav {
-            border-top: solid 1px _palette(border);
             text-align: inherit;
+
 
             > ul {
                 > li {
@@ -95,8 +118,15 @@
 
                     a {
                         height: 6em;
-                        line-height: 6em;
+                        line-height: 5em;
                     }
+                }
+            }
+
+            #logo-mobile{
+                img{
+                    height: 40px;
+                    padding-top: 12px;
                 }
             }
         }
