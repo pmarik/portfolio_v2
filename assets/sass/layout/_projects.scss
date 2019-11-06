@@ -6,6 +6,10 @@
     background-size: 100% 100%;
 
     min-height: 100vh;
+
+    @include breakpoint('<=small'){
+        background-attachment: scroll;
+    }
 }
 
 #projects.wrapper > .inner {

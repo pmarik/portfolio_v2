@@ -1716,6 +1716,23 @@ img#loader {
     margin: 0;
     font-size: 0.9rem; }
 
+.resources {
+  background: #f4f4f4;
+  width: 40%;
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 5%; }
+  .resources h3 {
+    font-size: 1.3rem; }
+  .resources p {
+    margin-bottom: 3px; }
+
 /* Wrapper (main) */
 #sidebar + #wrapper {
   margin-left: 12em; }
@@ -2041,8 +2058,11 @@ img#loader {
   background-image: url("images/intro.svg");
   background-position: top left;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 100vh; }
+  @media screen and (max-width: 746px) {
+    #about {
+      background-attachment: scroll; } }
 
 #wrapper #about .inner {
   position: relative;
@@ -2221,6 +2241,9 @@ img#loader {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   min-height: 100vh; }
+  @media screen and (max-width: 746px) {
+    #projects {
+      background-attachment: scroll; } }
 
 .tech-logos {
   display: -webkit-box;
@@ -2240,6 +2263,22 @@ img#loader {
       display: none; } }
   .tech-logos img {
     padding-left: 5%; }
+
+.case.content.four.portfolio {
+  text-align: left;
+  display: block; }
+  .case.content.four.portfolio #portfolioProjects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .case.content.four.portfolio #portfolioProjects .sectionimg {
+      width: 30%;
+      min-width: 270px; }
 
 #contact {
   background-color: #fafafa; }

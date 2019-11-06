@@ -24,7 +24,7 @@
 @import 'base/typography';
  
 
-// Components
+// Components 
 @import 'components/model3D';
 @import 'components/wrapper';
 @import 'components/buttons';
@@ -40,6 +40,7 @@
 @import 'components/case';
 @import 'components/loader';
 @import 'components/card';
+@import 'components/resources';
 
 
 
@@ -48,10 +49,12 @@
 @import 'layout/sidebar';  
 @import 'layout/about'; 
 @import 'layout/projects';
+@import 'layout/portfolio';
 @import 'layout/contact';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/404';
+
 
 
 

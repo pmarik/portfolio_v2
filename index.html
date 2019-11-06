@@ -29,7 +29,7 @@
 		<link rel="prefetch" href="/images/unaffiliatedTemplate.png" as="image">
 		<link rel="prefetch" href="/images/daymakerTemplate.png" as="image"> 
 		<link rel="prefetch" href="/images/m_logo.svg" as="image">
-      <link rel="subresource" href="/assets/css/images/codebackgroundBlurWeb.jpg" as="image">
+      <!-- <link rel="subresource" href="/assets/css/images/codebackgroundBlurWeb.jpg" as="image"> -->
       <link rel="subresource" href="/assets/css/images/intro.svg" as="image">
 	
 		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
@@ -851,17 +851,12 @@
                      var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
 
                      if(!isSmoothScrollSupported){
-                        
                            const scroll = new SmoothScroll('a[href*="#"].smoothscroll',{
                               speed: 800,
                               speedAsDuration: true
                            });
-                           console.log('smooth scroll NOT supported');
-
                      }
-                     else{
-                        console.log('smooth scroll already suppored');
-                     }
+                    
 
 
       </script>
