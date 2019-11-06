@@ -1,4 +1,5 @@
 require('intersection-observer');
+import "scroll-behavior-polyfill";
 
 
 function init(){
@@ -14,7 +15,7 @@ function init(){
         }
     })
 
-
+ 
     if(deviceWidth <= 746){
         thresholdNum = 0.1;
         sidebarActive(thresholdNum)
@@ -37,6 +38,7 @@ function init(){
         entries.forEach(entry => {
            
             let panelCheck = entry.target.classList.contains('panel');
+            let serviceIconCheck = entry.target.classList.contains('icon');
 
             if(entry.intersectionRatio > 0){
 
@@ -45,9 +47,16 @@ function init(){
                     document.getElementById('anim-med').classList.add('animMed');
                     document.getElementById('anim-fast').classList.add('animFast');
                 }
-                else{
-                    entry.target.classList.add('animActive');
+                else if (serviceIconCheck){
+                    document.getElementById('anim-service1').classList.add('animService1');
+                    document.getElementById('anim-service2').classList.add('animService2');
+                    document.getElementById('anim-service3').classList.add('animService3');
+                    document.getElementById('anim-service4').classList.add('animService4');
                     
+                }
+                else{
+                    document.getElementById('anim-contact1').classList.add('animService1');
+                  // entry.target.classList.add('animService');
                 }
 
             }

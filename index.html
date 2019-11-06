@@ -30,6 +30,7 @@
 		<link rel="prefetch" href="/images/daymakerTemplate.png" as="image"> 
 		<link rel="prefetch" href="/images/m_logo.svg" as="image">
       <link rel="subresource" href="/assets/css/images/codebackgroundBlurWeb.jpg" as="image">
+      <link rel="subresource" href="/assets/css/images/intro.svg" as="image">
 	
 		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 	</head>
@@ -658,24 +659,24 @@
 					<h2>Services</h2> 
 	
 					<p>Your site your brand. Experience the difference a personalized online presence can make for your business.  If you want the most impact for your creative dollars, then put it where it's most effective. I consult to improve websites with the following focus:</p>
-					<div class="features anim">
+					<div class="features">
 						<section>
-							<span class="icon major fa-code"></span>
+							<span class="icon major fa-code anim" id="anim-service1"></span>
 							<h3>Frontend Development</h3>
 							<p>Whether you are looking to create your own site from the ground-up, or improve the site you currently have, I will work with you to bring your ideas to life.</p>
 						</section>
 						<section>
-							<span class="icon major fa-chain"></span>
+							<span class="icon major fa-chain anim" id="anim-service2"></span>
 							<h3>SEO and Marketing</h3>
 							<p>Semantic HTML with the latest tools to improve your site rank. Get consultation on design and how to better improve your sales copy.</p>
 						</section>
 						<section>
-							<span class="icon major fa-cog"></span>
+							<span class="icon major fa-cog anim" id="anim-service3"></span>
 							<h3>Site Performance and Speed</h3>
 							<p>Don't lose potential customers due to a slow website. Increase the load speed of your site to prevent users from leaving prematurely.</p>
 						</section>
 						<section>
-							<span class="icon major fa-desktop"></span>
+							<span class="icon major fa-desktop anim" id="anim-service4"></span>
 							<h3>Accessibility Enchancement</h3>
 							<p>Improve the accessibility of your site to convert more sales and gain additional exposure. </p>
 						</section>
@@ -702,7 +703,9 @@
 								<h3>Unaffiliated Productions</h3>
 								<div class="sectionimg">
 										<a href="./case_one.html"><div class="centered"> View Project</div></a>
-										<a href="./case_one.html"><img src="images/unaffiliatedHome.jpg" alt="Unaffiliated Productions | Client Case" /></a>	
+                              <!-- <a href="./case_one.html"><img src="images/unaffiliatedHome.jpg" alt="Unaffiliated Productions | Client Case" /></a>	 -->
+                              <a href="./case_one.html"><img src="images/unaffiliatedSite.png" alt="Unaffiliated Productions | Client Case" /></a>	
+
 								</div> 
 								<p>Live production site developed with accessibility and SEO in mind to drive views and establish credibility...</p>
 							</div>
@@ -719,7 +722,9 @@
 								<h3>Daymaker Touring</h3>
 								<div class="sectionimg">
 									<a href="./case_two.html"><div class="centered"> View Project</div></a>
-									<a href="./case_two.html"><img src="images/daymakerHome.jpg" alt="Daymaker Touring | Client Case" /></a>
+                           <!-- <a href="./case_two.html"><img src="images/daymakerHome.jpg" alt="Daymaker Touring | Client Case" /></a> -->
+                           <a href="./case_two.html"><img src="images/daymakerSite.png" alt="Daymaker Touring | Client Case" /></a>
+
 								</div> 
 								<p>Ecommerce consultation to improve the design and functionality of a Shopify store to increase conversions... </p>
 							</div>
@@ -736,19 +741,18 @@
 								<h3>Trade Tracker</h3>
 								<div class="sectionimg">
 										<a href="./case_three.html"><div class="centered"> View Project</div></a>
-										<a href="./case_three.html"><img src="images/tradeTracker_journal.jpg" alt="Trade Tracker | Client Case" /></a>
+                              <!-- <a href="./case_three.html"><img src="images/tradeTracker_journal.jpg" alt="Trade Tracker | Client Case" /></a> -->
+                              <a href="./case_three.html"><img src="images/tradetrackerSite.png" alt="Trade Tracker | Client Case" /></a>
+
 								</div>
 								<p>MERN stack application to assist beginner investors with JWT authentication and custom built API endpoints...</p> 
 							</div>
 							<div class="panel-bottom">
-								
-	
 								<a href="./case_three.html" class="scrolly"><button><span class="svg-btn">VIEW PROJECT</span></button></a>
-
                      </div>
                   </section>
                   
-                  <div class="tech-logos">
+                  <!-- <div class="tech-logos">
                         <img src="images/ReactLogo.svg" height="100%" alt="React" title="React"/>
                         <img src="images/shopifyLogo.svg" height="100%" alt="Shopify" title="Shopify"/>
                         <img src="images/htmlLogo.svg" height="100%" alt="HTML5" title="HTML5"/>
@@ -757,7 +761,7 @@
                         <img src="images/nodejsLogo.svg" height="100%" alt="Node.js" title="Node.js"/>
                         <img src="images/webpackLogo.svg" height="100%" alt="webpack" title="webpack"/>
                         <img src="images/gitLogo.svg" height="100%" alt="Git" title="Git";/>
-                     </div>
+                     </div> -->
 
 					</div>
 
@@ -772,7 +776,7 @@
 					
 						<div class="svgContact">
 								<h2>Get in touch</h2>
-								<img src="images/contactman.svg" height="50px"/>
+								<img class="anim" id="anim-contact1" src="images/contactman.svg" height="50px"/>
 						</div>
 							
 					
@@ -787,15 +791,15 @@
 										<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
 									</p>
 									<div class="field half">
-											<label for="name" >Name</label>
+											<label for="name"  >Name</label>
 											<input required type="text" name="name" id="name" placeholder="Your Name" />
 										</div>
 										<div class="field half">
-											<label for="email">Email</label>
+											<label for="email" >Email</label>
 											<input required type="text" name="email" id="email" placeholder="Your Email" />
 										</div>
 										<div class="field">
-											<label for="message">Message</label>
+											<label for="message" >Message</label>
 											<textarea required name="message" id="message" rows="5" placeholder="Type your message here"></textarea>
 										</div>
 									</div>

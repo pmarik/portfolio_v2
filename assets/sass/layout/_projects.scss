@@ -24,6 +24,10 @@
     @include breakpoint('<=medium'){
         width: 100%;
     }
+
+    @include breakpoint('<=small'){
+        display: none;
+    }
     img{
         padding-left: 5%;
     }

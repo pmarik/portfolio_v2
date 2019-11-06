@@ -14,28 +14,23 @@ img#loader{
     justify-content: center;
     align-items: center;
 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-pack: center; 
+        -ms-flex-pack: center; 
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
     
+    #m-logo-brackets{
 
-    svg:nth-of-type(2){
-      position: absolute;
-      height: 120px;
-      padding-bottom: 90px;
-     
-    } 
+        height: 140px;
+        padding-bottom: 95px;
+      }
 
-    #bracketleft{
-      height: 130px;
-      padding-right: 20px;
-      padding-bottom: 90px;
- 
-    }
-
-    #bracketright{
-      height: 130px;
-      padding-left: 20px;
-      padding-bottom: 90px;
-     
-    }
 }
 
 

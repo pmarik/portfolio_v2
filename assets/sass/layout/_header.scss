@@ -35,9 +35,7 @@
  
         #logo-mobile{
             display: none;
-            img{
-                height: 80%;
-            }
+            
         }
  
         @include breakpoint('<=small'){
