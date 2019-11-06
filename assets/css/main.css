@@ -2275,9 +2275,10 @@ ul.contact {
   background-color: #262f31;
   cursor: default;
   padding: 1em 2em;
-  min-height: 70px;
+  min-height: 3.5em;
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  line-height: 18px; }
   #header img:hover {
     -webkit-filter: opacity(80%);
     filter: opacity(80%); }
@@ -2299,7 +2300,10 @@ ul.contact {
     -ms-flex-pack: justify;
     justify-content: space-between; }
     #header > nav #logo-mobile {
-      display: none; }
+      display: none;
+      margin-top: -5px; }
+    #header > nav #logo-big {
+      margin-top: -5px; }
     @media screen and (max-width: 746px) {
       #header > nav #logo-big {
         display: none; }
@@ -2338,7 +2342,7 @@ ul.contact {
   @media screen and (max-width: 746px) {
     #header {
       padding: 1em 2em;
-      min-height: 70px; } }
+      min-height: 3.5em; } }
   @media screen and (max-width: 480px) {
     #header {
       display: block;

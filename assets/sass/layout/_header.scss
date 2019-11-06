@@ -6,9 +6,10 @@
     background-color: _palette(bg);
     cursor: default;
     padding: 1em 2em;
-    min-height: 70px;
+    min-height: 3.5em;
     overflow-x: hidden;
     overflow-y: auto;
+    line-height: 18px;
     img{
      &:hover{
          filter: opacity(80%);
@@ -35,7 +36,11 @@
  
         #logo-mobile{
             display: none;
-            
+            margin-top: -5px;
+        }
+
+        #logo-big{
+            margin-top: -5px;
         }
  
         @include breakpoint('<=small'){
@@ -93,7 +98,7 @@
 
     @include breakpoint('<=small') {
         padding: 1em 2em;
-        min-height: 70px;
+        min-height: 3.5em;
     }
 
     @include breakpoint('<=xsmall') {

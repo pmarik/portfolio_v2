@@ -1,9 +1,7 @@
 require('intersection-observer');
-import "scroll-behavior-polyfill";
 
 
 function init(){
-
     
     let deviceWidth = window.innerWidth;
     let thresholdNum;
@@ -157,6 +155,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 }
                 
     }, 800)
+
+    
     
     init();
   });

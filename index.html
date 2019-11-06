@@ -41,10 +41,10 @@
 		<section id="sidebar">
 			<nav class="inner">
 				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about" class="smoothscroll">About</a></li>
+					<li ><a href="#services" class="smoothscroll">Services</a></li>
+					<li><a href="#projects"  class="smoothscroll">Projects</a></li>
+					<li ><a href="#contact" class="smoothscroll">Contact</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -591,7 +591,7 @@
                 <h1>Professional Web Development </h1>
                 <p>I specialize in creating and enhancing websites to grow your business</p>
 				
-				<a href="#services" class="scrolly"><button class="flag-btn-container">
+				<a href="#services" class="scrolly smoothscroll"><button class="flag-btn-container">
 					<div class="flag-btn">LEARN MORE</div>
 						<svg
 							xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -683,7 +683,7 @@
 					</div>
 					
 					<div class="btn-wrapper">
-						<a href="#contact" class="scrolly"><button><span class="svg-btn-alt">CONTACT NOW</span></button></a>
+						<a href="#contact" class="scrolly smoothscroll"><button><span class="svg-btn-alt">CONTACT NOW</span></button></a>
 					</div>
 					
 				</div>
@@ -844,7 +844,31 @@
 			</div>
 				
 
-		<!-- Scripts -->
+
+      <!-- smooth scroll cross-browser polyfill -->
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+      <script>
+                     var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
+
+                     if(!isSmoothScrollSupported){
+                        
+                           const scroll = new SmoothScroll('a[href*="#"].smoothscroll',{
+                              speed: 800,
+                              speedAsDuration: true
+                           });
+                           console.log('smooth scroll NOT supported');
+
+                     }
+                     else{
+                        console.log('smooth scroll already suppored');
+                     }
+
+
+      </script>
+
+      <!-- Scripts -->
+      
+
 		<script src="./dist/bundle.js"></script> 		
         
 	</body>
