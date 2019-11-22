@@ -114,7 +114,7 @@ a {
   -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   -o-transition: color 0.2s ease, border-bottom-color 0.2s ease;
   transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+  border-bottom: dotted 1px rgba(79, 79, 79, 0.65);
   color: inherit;
   text-decoration: none; }
   a:hover {
@@ -186,11 +186,11 @@ h6 {
 
 @media screen and (max-width: 746px) {
   h1 {
-    font-size: 2em; }
+    font-size: 1.75em; }
   h2 {
-    font-size: 1.25em; }
-  h3 {
     font-size: 1em; }
+  h3 {
+    font-size: 0.8em; }
   h4 {
     font-size: 0.8em; }
   h5 {
@@ -702,7 +702,7 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(79, 79, 79, 0.65);
   position: relative;
   margin: 0 0 1.5em 0; }
 
@@ -1331,19 +1331,19 @@ input[type="radio"] + label:before {
   border-radius: 100%; }
 
 ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.35) !important;
+  color: rgba(79, 79, 79, 0.65) !important;
   opacity: 1.0; }
 
 :-moz-placeholder {
-  color: rgba(255, 255, 255, 0.35) !important;
+  color: rgba(79, 79, 79, 0.65) !important;
   opacity: 1.0; }
 
 ::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.35) !important;
+  color: rgba(79, 79, 79, 0.65) !important;
   opacity: 1.0; }
 
 :-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.35) !important;
+  color: rgba(79, 79, 79, 0.65) !important;
   opacity: 1.0; }
 
 #contact {
@@ -1354,7 +1354,7 @@ input[type="radio"] + label:before {
   #contact .inner h2 {
     padding: 0 30px 0 0; }
   #contact .inner form input, #contact .inner form textarea {
-    background-color: #8b8f92; }
+    background-color: #e8e8e8; }
   #contact .inner p:last-child {
     right: 20px;
     opacity: 0.3;
@@ -2064,6 +2064,15 @@ img#loader {
     #about {
       background-attachment: scroll; } }
 
+.marik-script-anim {
+  position: relative;
+  background: transparent;
+  height: 30px;
+  width: 260px; }
+  @media screen and (max-width: 746px) {
+    .marik-script-anim {
+      margin-top: 15px; } }
+
 #wrapper #about .inner {
   position: relative;
   bottom: 5vh; }
@@ -2082,7 +2091,8 @@ img#loader {
         width: 70%; } }
     @media screen and (max-width: 746px) {
       #wrapper #about .inner p {
-        width: 95%; } }
+        width: 95%;
+        margin: 0 0 1em 0; } }
 
 #brakleft {
   position: absolute;
@@ -2403,7 +2413,7 @@ ul.contact {
 
 /* Footer */
 #footer .inner.case-footer {
-  padding: 1.2em 1em; }
+  padding: 1.2em 3em; }
 
 #sidebar + #wrapper + #footer {
   margin-left: 12em; }

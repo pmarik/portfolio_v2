@@ -5,17 +5,17 @@
 #footer {
 
     .inner.case-footer{
-        padding: 1.2em 1em;
+        padding: 1.2em 3em;
     }
 
     #sidebar + #wrapper + & {
         margin-left: _size(sidebar-width);
-
+ 
         @include breakpoint('<=large') {
             margin-left: 0;
         }
     }
-
+ 
     > .inner {
         text-align: right;
         margin: 0 auto;

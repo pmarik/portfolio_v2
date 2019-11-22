@@ -16,6 +16,16 @@
      
 }
 
+.marik-script-anim{
+    position: relative; 
+    background: transparent;
+    height: 30px; 
+    width: 260px;
+
+    @include breakpoint('<=small'){
+        margin-top: 15px;
+    }
+}
  
 
 
@@ -44,6 +54,7 @@
 
         @include breakpoint('<=small'){
             width: 95%;
+            margin: 0 0 1em 0;
         }
     }
 
