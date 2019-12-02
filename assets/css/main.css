@@ -2254,6 +2254,20 @@ img#loader {
   @media screen and (max-width: 746px) {
     #projects {
       background-attachment: scroll; } }
+  #projects .portfolio-link {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #projects .portfolio-link a {
+      font-style: italic;
+      border-bottom: 0.2rem solid #AF9D61; }
+    @media screen and (max-width: 980px) {
+      #projects .portfolio-link {
+        font-size: 1.2rem; } }
 
 .tech-logos {
   display: -webkit-box;

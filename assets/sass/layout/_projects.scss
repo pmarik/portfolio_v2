@@ -10,6 +10,20 @@
     @include breakpoint('<=small'){
         background-attachment: scroll;
     }
+
+    .portfolio-link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a{
+            font-style: italic;
+            border-bottom: 0.2rem solid _palette(accent3);
+        }
+
+        @include breakpoint('<=medium'){
+            font-size: 1.2rem;
+        }
+    }
 }
 
 #projects.wrapper > .inner {
